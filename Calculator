@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int sayi1,sayi2;
+        int button;
+
+        System.out.println("Lütfen 1.Sayiyi Giriniz ");
+        sayi1=input.nextInt();
+        System.out.println("Lütfen 2.Sayiyi Giriniz ");
+        sayi2=input.nextInt();
+        System.out.println("Lütfen İslem Yapmak İstediginiz Operatörü Girin:(1-+,2.-,3-*,4-/");
+        button = input.nextInt();
+
+        switch (button){
+            case 1: {
+                System.out.println("Sonuc :" + (sayi1 + sayi2));
+                break;
+            }
+            case 2: {
+                System.out.println("Sonuc :" + (sayi1 - sayi2));
+                break;
+
+                }
+            case 3: {
+                System.out.println("Sonuc :" + (sayi1 * sayi2));
+                break;
+            }
+            case 4: {
+                System.out.println("Sonuc :" + (sayi1 / sayi2));
+                break;
+            }
+            default:
+                System.out.println("Hatali Giris Yaptiniz");
+        }
+
+
+    }
+}
